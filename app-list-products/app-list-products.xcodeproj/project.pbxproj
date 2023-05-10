@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0D15682A0AFEDC0069B17D /* ProductoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D15662A0AFEDC0069B17D /* ProductoCell.swift */; };
+		CC0D15692A0AFEDC0069B17D /* ProductoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC0D15672A0AFEDC0069B17D /* ProductoCell.xib */; };
 		CCDD67802A09A13D00901128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD677F2A09A13D00901128 /* AppDelegate.swift */; };
 		CCDD67822A09A13D00901128 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD67812A09A13D00901128 /* SceneDelegate.swift */; };
 		CCDD67842A09A13D00901128 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD67832A09A13D00901128 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC0D15662A0AFEDC0069B17D /* ProductoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCell.swift; sourceTree = "<group>"; };
+		CC0D15672A0AFEDC0069B17D /* ProductoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoCell.xib; sourceTree = "<group>"; };
 		CCDD677C2A09A13D00901128 /* app-list-products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-list-products.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDD677F2A09A13D00901128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDD67812A09A13D00901128 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				CCDD678D2A09A13F00901128 /* Info.plist */,
 				CCDD67932A09A3F300901128 /* ProductosManager.swift */,
 				CCDD67952A09A4F600901128 /* ProductoModel.swift */,
+				CC0D15662A0AFEDC0069B17D /* ProductoCell.swift */,
+				CC0D15672A0AFEDC0069B17D /* ProductoCell.xib */,
 			);
 			path = "app-list-products";
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDD678C2A09A13F00901128 /* LaunchScreen.storyboard in Resources */,
+				CC0D15692A0AFEDC0069B17D /* ProductoCell.xib in Resources */,
 				CCDD67892A09A13F00901128 /* Assets.xcassets in Resources */,
 				CCDD67872A09A13D00901128 /* Main.storyboard in Resources */,
 			);
@@ -145,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDD67842A09A13D00901128 /* ViewController.swift in Sources */,
+				CC0D15682A0AFEDC0069B17D /* ProductoCell.swift in Sources */,
 				CCDD67802A09A13D00901128 /* AppDelegate.swift in Sources */,
 				CCDD67822A09A13D00901128 /* SceneDelegate.swift in Sources */,
 				CCDD67962A09A4F600901128 /* ProductoModel.swift in Sources */,

@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tablaProductos.register(UINib(nibName: "ProductoCell", bundle: nil), forCellReuseIdentifier: "celda")
+        
         tablaProductos.delegate = self
         tablaProductos.dataSource = self
         
@@ -30,7 +32,10 @@ class ViewController: UIViewController {
     func obtenerProductos(){
         manager.obetenerProductos { [self] listaProductos in
             self.productos = listaProductos
-            self.tablaProductos.reloadData()
+            DispatchQueue.main.async {
+                self.tablaProductos.reloadData()
+            }
+            
         }
     }
 
@@ -43,8 +48,24 @@ extension ViewController:  UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! ProductoCell
+        
+        celda.configurarCelda(producto: productos[indexPath.row])
+        
         return celda
     }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
 }
+
+
+
+
+
+
+
+
+
 
